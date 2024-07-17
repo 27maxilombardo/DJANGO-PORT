@@ -1,0 +1,311 @@
+{% load static %}
+{% load bootstrap5 %}
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio-Web</title>
+    {% bootstrap_css %}
+
+    <!-- BOOTSTRAP5 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css" rel="stylesheet">
+    <!-- FONTAWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- CSS -->
+    <link type="text/css"  rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="stylesheet" href="{% static 'css/estilo.css' %}">
+    <link rel="stylesheet" href="{% static 'css/slide.css' %}">
+    <!-- D3.js -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.1.1/d3.min.js"></script>
+    <!--ANIMATE-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+</head>
+<body>
+    <!-- NAV-BAR -->
+    <div class="container-fluid" id="navbar1">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top " id="navbar11">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><strong>GAMER PARADISE</strong> <i class="fa-solid fa-gamepad"></i></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#"><strong>Notebook <i class="fa-solid fa-laptop"></i></strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#descripcion"><strong>Audifonos <i class="fa-solid fa-headphones"></i></strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto "><strong>Mouse <i class="fa-solid fa-computer-mouse"></i></strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#proyecto"><strong>Teclado <i class="fa-solid fa-keyboard"></i></strong></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#"><strong>Monitores <i class="fa-solid fa-tv"></i></strong></a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </div>
+    
+    <div id="carouselExampleIndicators" class="carousel-slide" data-bs-ride="carousel">
+        
+        <div class="carousel-inner">
+            <a href="https://sipoonline.cl/">
+                <img src="{% static 'img/slide1.png' %}" class="d-block w-100" alt="slide1">
+            </a>
+            <div class="carousel-item">
+                <img src="{% static 'img/slide2.png' %}" class="d-block w-100" alt="slide2">
+                
+            </div>
+            <div class="carousel-item">
+                <img src="{% static 'img/slide3.png' %}" class="d-block w-100" alt="slide3">
+                
+            </div>
+        </div>
+        
+    </div>
+    <div class="fotonaranja">
+        <img src="{% static 'img/image.png' %}" alt="img-fluid">
+    
+    </div>
+<!-- Sliders en columnas -->
+<div class="sliders-row">
+    <div class="slider-container">
+        <div class="slider slider1 position"></div>
+        
+    </div>
+    <div class="slider-container">
+        <div class="slider slider2 position"></div>
+       
+    </div>
+    <div class="slider-container">
+        <div class="slider slider3 position"></div>
+    
+    </div>
+</div>
+
+    <!-- SLIDE -->
+
+       
+    
+<div class="fotoazul">
+        <img src="{% static 'img/image2.png' %}" alt="img-fluid">
+    
+</div>
+    
+    <section class="contenedor" id="conte">
+        <!-- Contenedor de elementos -->
+        <div class="contenedor-items" class="carritode">
+            <div class="item">
+                <span class="titulo-item">Auriculares</span>
+                <img src="static/img/th_1.jpeg" alt="" class="img-item">
+                <span class="precio-item">$15.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">Asus vivobook</span>
+                <img src="static/img/asus.jpeg" alt="" class="img-item">
+                <span class="precio-item">$598.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">mause</span>
+                <img src="static/img/mause.jpg" alt="" class="img-item">
+                <span class="precio-item">$35.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">ps4</span>
+                <img src="static/img/ps4.jpeg" alt="" class="img-item">
+                <span class="precio-item">289.990</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">audifonos</span>
+                <img src="static/img/audifonos.jpeg" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">ps5</span>
+                <img src="static/img/ps5.jpg" alt="" class="img-item">
+                <span class="precio-item">$450.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">jbl auriculares</span>
+                <img src="static/img/th_jbl.jpeg" alt="" class="img-item">
+                <span class="precio-item">$54.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <span class="titulo-item">cargador iphone</span>
+                <img src="static/img/cargador.jpeg" alt="" class="img-item">
+                <span class="precio-item">$32.000</span>
+                <button class="boton-item">Agregar al Carrito</button>
+            </div>
+            
+        </div>
+
+        <!-- Carrito de Compras -->
+        <div class="carrito" id="carrito">
+            <div class="header-carrito">
+                <h2>Tu Carrito</h2>
+            </div>
+
+            <div class="carrito-items">
+                <!-- 
+                <div class="carrito-item">
+                    <img src="img/boxengasse.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Box Engasse</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="1" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$15.000,00</span>
+                    </div>
+                   <span class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </span>
+                </div>
+                <div class="carrito-item">
+                    <img src="img/skinglam.png" width="80px" alt="">
+                    <div class="carrito-item-detalles">
+                        <span class="carrito-item-titulo">Skin Glam</span>
+                        <div class="selector-cantidad">
+                            <i class="fa-solid fa-minus restar-cantidad"></i>
+                            <input type="text" value="3" class="carrito-item-cantidad" disabled>
+                            <i class="fa-solid fa-plus sumar-cantidad"></i>
+                        </div>
+                        <span class="carrito-item-precio">$18.000,00</span>
+                    </div>
+                   <button class="btn-eliminar">
+                        <i class="fa-solid fa-trash"></i>
+                   </button>
+                </div>
+                 -->
+            </div>
+            <div class="carrito-total">
+                <div class="fila">
+                    <strong>Tu Total</strong>
+                    <span class="carrito-precio-total">
+                        $120.000,00
+                    </span>
+                </div>
+                <button class="btn-pagar">Pagar <i class="fa-solid fa-bag-shopping"></i> </button>
+            </div>
+        </div>
+        
+    </section>
+    <div class="foto3">
+        <img src="{% static 'img/sop1.png' %}" alt="img-fluid">
+    
+    </div>
+    <!--contacto-->
+    <section class="contactonuevo1" >
+
+        <div class="container" class="contactonuevo">
+    
+          <h2 class="text-center">Contactános para un servicio especializado</h2>
+    
+          <form class="ult" method="POST" action="{% url 'contacto_nuevo' %}" id="contactForm" class="needs-validation" novalidate>
+    
+            {% csrf_token %}
+            
+            <div class="mb-3">
+    
+              <label for="name" class="form-label">Nombre Completo </label>
+    
+              <input name="nombre" type="text" class="form-control shadow-lg" id="name" required>
+    
+              <div class="invalid-feedback">Please enter your name.</div>
+    
+            </div>
+    
+            <div class="mb-3">
+    
+              <label for="email" class="form-label">Correo Electrónico </label>
+    
+              <input name="email" type="email" class="form-control shadow-lg" id="email" required>
+    
+              <div class="invalid-feedback">Please enter a valid email address.</div>
+    
+            </div>
+    
+            <div class="mb-3">
+    
+              <label for="message" class="form-label">Mensaje</label>
+    
+              <textarea name="mensaje" class="form-control shadow-lg" id="message" rows="3" required></textarea>
+    
+              <div class="invalid-feedback">Please enter your message.</div>
+    
+            </div>
+    
+            <button type="submit" class="btn btn-outline-primary text-center ">Enviar</button>
+    
+          </form>
+    
+        </div>
+    
+      </section>
+    
+    </div>
+    
+    <div class="foto4">
+        <img src="{% static 'img/sop2.png' %}" alt="img-fluid">
+    
+    </div>
+    
+
+
+    <section id="projects" class="py-5 projects">
+        <div class="container">
+            <h2 class="text-center">Noticias que podrían interesarte!</h2>
+            <div class="row">
+                {% for proyecto in proyectos %}
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <img src="{{ proyecto.imagen.url }}" class="card-img-top" alt="{{ proyecto.titulo }}">
+                        <div class="card-body d-flex flex-column">
+                            <h5 class="card-title">{{ proyecto.titulo }}</h5>
+                            <p class="card-text">{{ proyecto.descripcion }}</p>
+                            <div class="mt-auto">
+                                <a href="{{ proyecto.link_sitio }}" class="btn btn-outline-primary text-center mb-2" target="_blank">View Site</a>
+                                <a href="{{ proyecto.link_repositorio }}" class="btn btn-sm btn-outline-primary text-center mb-2" target="_blank">View Repo</a>
+                                <a href="{% url 'proyecto_detalle' proyecto.pk %}" class="btn btn-info">Ver Detalle</a> <!-- Nuevo botón -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+    </section>
+    <div class="foto5">
+        <img src="{% static 'img/sop3.png' %}" alt="img-fluid">
+    
+    </div>
+    <div class="footer">
+        <footer class="text-white text-center py-3 footer-black">
+            <p>© 2024 Gamer Paradise. Todos los derechos reservados.</p>
+        </footer>
+        
+    </div>
+    
+    <!-- Script del gráfico de habilidades -->
+    <!-- Script del gráfico de habilidades -->
+    
+    
+    <script src="{% static 'js/app.js'%}"></script>  
+</body>
+</html>
